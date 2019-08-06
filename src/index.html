@@ -5,7 +5,6 @@
     <title>AuroraWeather</title>
     <script src="../js/jQuery.js"></script>
     <script src="../js/select2.full.min.js"></script>
-    <script src="../js/index.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/select2.min.css">
     <link rel="stylesheet" href="../css/index.css">
@@ -13,51 +12,33 @@
 </head>
 <body>
 <!--头部-->
-<div id="top-1">
-    <a id="imgLogo" href="index.html"><img alt="logo" src="../img/logo.png"/></a>
-    <div id="ipt">
-        <input id="ipt1" class="form-control" type="text" placeholder="点我搜索">
+<header>
+    <div id="topDiv">
+        <a id="imgLogo" href="index.html"><img alt="logo" src="../img/logo.png"/></a>
+        <input id="searchIpt" class="form-control" type="text" placeholder="点我搜索">
+        <button type="button" id="searchBtn" class="btn btn-info"><span style="color: white;font-size: 22px">搜索</span></button>
     </div>
-    <div>
-        <button type="button" id="bt" class="btn btn-info"><span style="color: white;font-size: 22px">搜索</span></button>
-    </div>
-</div>
+</header>
 <!-- 头部结束-->
 <!-- 中间部位-->
- <div >
+ <div>
      <div id="leftBlock">
          zheshiliebiao
      </div>
-     <div id="area">
-        <span id="areaText" >上海</span>
-         <p id="areaP">
-             <a href="#"><img id="areaImg1" src="../img/收藏.png"></a>
-         </p>
-         <p id="clickP">
-             <a href="#"><img id="areaImg2" src="../img/符号-位置.png">
-                 <span id="changText">Change Location</span>
+     <div id="con">
+         <div style="float: left">
+             <span id="city">长宁</span>
+             <a href="javascript:void(0);" id="areaCollectionA"><img id="areaCollectionImg" src="../img/收藏.png"></a>
+             <a href="javascript:void(0);" id="areaLocalA"><img id="areaLocalImg" src="../img/符号-位置.png">
+                 <span>Change Location</span>
              </a>
-         </p>
-         <div id="selectArea">
-            <select class="select2">
-                <option value="1">11</option>
-                <option value="2">21</option>
-                <option value="3">31</option>
-                <option value="4">41</option>
-                <option value="5">51</option>
-            </select>
+         </div>
+         <div id="province">
+             <p>shangh</p>
          </div>
      </div>
-
-
  </div>
 <!--中间部位结束-->
+<script src="../js/index.js"></script>
 </body>
-<script>
-    $(document).ready(function () {
-        $('.select2').select2({
-
-        });
-    })
-</script>
 </html>
