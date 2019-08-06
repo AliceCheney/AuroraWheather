@@ -9,30 +9,55 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/select2.min.css">
     <link rel="stylesheet" href="../css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
 <!--头部-->
- <header>
-        <div id="top-1">
-            <span id="block1">AuroraWeather</span><br>
-            <span id="block2">Weather</span>
-            <div id="ipt">
-                <input id="ipt1" type="text">
-                <button type="button" id="bt" class="btn btn-info">搜索</button>
-            </div>
-        </div>
- </header>
+<div id="top-1">
+    <a id="imgLogo" href="index.html"><img alt="logo" src="../img/logo.png"/></a>
+    <div id="ipt">
+        <input id="ipt1" class="form-control" type="text" placeholder="点我搜索">
+    </div>
+    <div>
+        <button type="button" id="bt" class="btn btn-info"><span style="color: white;font-size: 22px">搜索</span></button>
+    </div>
+</div>
 <!-- 头部结束-->
-
 <!-- 中间部位-->
- <div>
+ <div >
      <div id="leftBlock">
          zheshiliebiao
      </div>
+     <div id="area">
+        <span id="areaText" >上海</span>
+         <p id="areaP">
+             <a href="#"><img id="areaImg1" src="../img/收藏.png"></a>
+         </p>
+         <p id="clickP">
+             <a href="#"><img id="areaImg2" src="../img/符号-位置.png">
+                 <span id="changText">Change Location</span>
+             </a>
+         </p>
+         <div id="selectArea">
+            <select class="select2">
+                <option value="1">11</option>
+                <option value="2">21</option>
+                <option value="3">31</option>
+                <option value="4">41</option>
+                <option value="5">51</option>
+            </select>
+         </div>
+     </div>
+
+
  </div>
 <!--中间部位结束-->
 </body>
 <script>
+    $(document).ready(function () {
+        $('.select2').select2({
 
+        });
+    })
 </script>
 </html>

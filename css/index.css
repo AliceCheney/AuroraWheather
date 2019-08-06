@@ -5,7 +5,9 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    /*float: left;*/
 }
+
 #top-1{
     position: fixed;
     z-index: 100;
@@ -14,37 +16,90 @@ body{
     background-color: rgba(2,2,2,0.4);
     padding-top: 0.5%;
     top: 0;
+    float: left;
 }
 
-#block1{
-    font-size: 30px;
-    color: white;
-    margin-left: 2%;
-}
-#block2{
-    font-size: 20px;
-    color: white;
-    margin-left: 4.5%;
-
+#imgLogo{
+    margin-left: 4%;
 }
 #ipt{
-    box-sizing: content-box;
-    margin-left: 14%;
-    margin-top: -2.7%;
+    margin-left: 15%;
+    margin-top: -2.6%;
+    width: 25%;
+    top: 0;
 }
 #ipt1{
-    width: 20%;
-    height: 40px;
+    width: 100%;
+    height: 55px;
 }
 #leftBlock{
-    width: 17%;
-    height: 3000px;
+    width: 14%;
+    height: 1000px;
     background-color: rgba(2,2,2,0.4);
     margin-left: 1%;
     margin-top: 100px;
 }
 #bt{
     width: 5%;
-    height: 40px;
-    margin-left: 1%;
+    height: 55px;
+    margin-left: 41%;
+    margin-top: -4%;
+}
+
+#area{
+    margin-left: 16%;
+    margin-top: -48%;
+    width: 82%;
+    height: 650px;
+    /*background-color: #1b6d85;*/
+}
+#areaText{
+    font-size: 80px;
+    color: white;
+    width: 82%;
+    margin-left: 2%;
+}
+#areaP{
+    height: 60px;
+    width: 60px;
+    background-color: rgba(2,2,2,0.4);
+    text-align: center;
+    margin-left: 17%;
+    margin-top: -5%;
+}
+#areaImg1{
+    width: 48px;
+    height: 48px;
+    margin-top: 6px;
+}
+#clickP{
+    margin-left: 22%;
+    margin-top: -4.2%;
+    height: 60px;
+    width: 260px;
+    background-color: rgba(2,2,2,0.4);
+}
+#areaImg2{
+    width: 44px;
+    height: 46px;
+    margin-left: 4%;
+    margin-top: 7px;
+}
+#changText{
+    color: #F9C73D;
+    font-size: 23px;
+    margin-left: 2%;
+}
+#selectArea{
+    width: 16%;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 22%;
+}
+.select2{
+    margin-top: 4%;
+    width: 100%;
+    /*height: 70px;*/
+    /*margin-left: 2%;*/
 }
