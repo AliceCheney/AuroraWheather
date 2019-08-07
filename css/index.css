@@ -1,3 +1,9 @@
+@media (min-width:1400px ) {
+    #leftBlock{display: block}
+}
+@media (max-width:1100px ) {
+    #leftBlock{display: none}
+}
 body{
     background-image: url("../img/ground.jpg");
     margin: 0 auto;
@@ -12,11 +18,30 @@ header{
     position: fixed;
     z-index: 100;
     width: 100%;
-    height: 90px;
+    height: 100px;
     background-color: rgba(2,2,2,0.4);
     padding-top: 0.5%;
     top: 0;
 }
+#selectForm{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 1px 8px #888888;
+    margin-left: 55%;
+    margin-top: -45px;
+    /*float: left;*/
+
+}
+.select2{
+    width: 250px;
+    margin-left: 15%;
+}
+#selectSpanText{
+    
+}
+
 .blackMask{
     background-color: rgba(2,2,2,0.4);
 }
@@ -42,27 +67,27 @@ header{
     float: left;
 }
 #leftBlock{
-    width: 14%;
+    width: 13.5%;
     height: 1000px;
     background-color: rgba(2,2,2,0.4);
     margin-left: 1%;
-    margin-top: 100px;
+    margin-top: 120px;
     float: left;
 }
 
 #con{
-    margin-top: 100px;
+    margin-top: 140px;
     float: left;
-    margin-left: 1%;
+    margin-left: 3%;
 }
 #city{
-    font-size: 48px;
+    font-size: 55px;
     color: white;
     float: left;
 }
 #areaCollectionA{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 60px;
     float: left;
     background-color: rgba(2,2,2,0.4);
     padding: 5px 5px 5px 5px;
@@ -84,4 +109,5 @@ header{
 }
 #province{
     /*float: top;*/
+    /*width: 200px;*/
 }
