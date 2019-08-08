@@ -24,22 +24,47 @@ header{
     top: 0;
 }
 #selectForm{
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: 200px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 2px 1px 8px #888888;
     margin-left: 55%;
-    margin-top: -45px;
+    margin-top: -55px;
+    display: none;
     /*float: left;*/
 
 }
-.select2{
-    width: 250px;
-    margin-left: 15%;
-}
 #selectSpanText{
-    
+    width: 350px;
+    margin-left: 25px;
+    color: #1296DB;
+    margin-top: -8%;
+    font-size: 20px;
+    cursor: pointer;
+}
+#selectFormImg{
+    width: 25px;
+    height: 25px;
+    margin-top: -73px;
+    margin-left: 350px;
+    cursor: pointer
+}
+.select2{
+    width: 350px;
+    margin-left: 6.5%;
+    margin-top: 70px;
+}
+#selectFoot{
+    width: 400px;
+    height: 62px;
+    background-color: rgba(212, 212, 212, 0.1);
+    margin-top: 20px;
+}
+#selectFootP{
+    cursor: pointer;
+    margin-left: 20px;
+    padding-top: 20px
 }
 
 .blackMask{
@@ -91,6 +116,7 @@ header{
     float: left;
     background-color: rgba(2,2,2,0.4);
     padding: 5px 5px 5px 5px;
+    cursor: pointer;
 }
 #areaLocalA{
     margin-top: 10px;
@@ -98,6 +124,7 @@ header{
     float: left;
     padding: 5px 5px 5px 0;
     background-color: rgba(2,2,2,0.4);
+    cursor: pointer;
 }
 #areaCollectionImg{
     width: 40px;
@@ -107,7 +134,7 @@ header{
     width: 40px;
     height: 40px;
 }
-#province{
-    /*float: top;*/
-    /*width: 200px;*/
+#nowTime{
+    float: left;
+    color: white;
 }

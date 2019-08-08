@@ -26,19 +26,27 @@
          zheshiliebiao
      </div>
      <div id="con">
-         <div style="float: left">
+         <div id="clickDiv" style="float: left">
              <span id="city">长宁</span>
-             <a href="javascript:void(0);" id="areaCollectionA"><img id="areaCollectionImg" src="../img/收藏.png"></a>
-             <a href="javascript:void(0);" id="areaLocalA"><img id="areaLocalImg" src="../img/符号-位置.png">
+             <div  id="areaCollectionA"><img id="areaCollectionImg" src="../img/收藏.png"></div>
+             <div  id="areaLocalA"><img id="areaLocalImg" src="../img/符号-位置.png">
                  <span style="color: #F9C73D">Change Location</span>
-             </a>
+             </div>
          </div>
          <div id="province">
-             <p style="color: white;margin-left: 8%">上海</p>
+             <p id="textP" style="color: white;font-size: 25px;padding-top: 3%;">上海</p>
+             <div id="newTime">
+                  <!--获取系统时间-->
+                 <span id="nowTime">显示时间</span>
+             </div>
          </div>
+
          <div id="selectForm">
-             <span id="selectSpanText">检测我的位置</span>
-             <select class="select2">
+            <div style="float: left">
+                <p id="selectSpanText">Detect my location</p>
+               <img id="selectFormImg" src="../img/定位-定位.png">
+            </div>
+            <select class="select2">
                  <option value="徐汇">徐汇</option>
                  <option value="宝山">宝山</option>
                  <option value="闵行">闵行</option>
@@ -46,6 +54,9 @@
                  <option value="嘉定">嘉定</option>
                  <option value="南汇">南汇</option>
              </select>
+             <div id="selectFoot">
+                 <p id="selectFootP">管理位置</p>
+             </div>
          </div>
 
      </div>
