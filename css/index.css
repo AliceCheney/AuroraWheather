@@ -39,7 +39,7 @@ header{
     width: 350px;
     margin-left: 25px;
     color: #1296DB;
-    margin-top: -8%;
+    margin-top: -147%;
     font-size: 20px;
     cursor: pointer;
 }
@@ -57,14 +57,16 @@ header{
 }
 #selectFoot{
     width: 400px;
-    height: 62px;
+    height: 70px;
     background-color: rgba(212, 212, 212, 0.1);
     margin-top: 20px;
+    /*padding-left: 60%;*/
 }
 #selectFootP{
+    padding-left: -100px;
+    padding-top: 20px;
     cursor: pointer;
-    margin-left: 20px;
-    padding-top: 20px
+    text-align: left;
 }
 
 .blackMask{
@@ -110,14 +112,7 @@ header{
     color: white;
     float: left;
 }
-#areaCollectionA{
-    margin-top: 10px;
-    margin-left: 60px;
-    float: left;
-    background-color: rgba(2,2,2,0.4);
-    padding: 5px 5px 5px 5px;
-    cursor: pointer;
-}
+
 #areaLocalA{
     margin-top: 10px;
     margin-left: 10px;
@@ -126,9 +121,18 @@ header{
     background-color: rgba(2,2,2,0.4);
     cursor: pointer;
 }
+#areaCollectionA{
+    margin-top: 10px;
+    margin-left: 60px;
+    float: left;
+    background-color: rgba(2,2,2,0.4);
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
 #areaCollectionImg{
     width: 40px;
     height: 40px;
+    /*margin-left: 15%;*/
 }
 #areaLocalImg{
     width: 40px;
@@ -137,4 +141,13 @@ header{
 #nowTime{
     float: left;
     color: white;
+}
+#temperature{
+    color: white;
+    font-size: 220px;
+    margin-top: -50px;
+    margin-left: -6%;
+}
+#fc{
+    margin-left: 200px;
 }
