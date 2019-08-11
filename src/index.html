@@ -26,56 +26,59 @@
          zheshiliebiao
      </div>
      <div id="con">
-         <div id="clickDiv" style="float: left;">
+         <!--地域时间-->
+         <div id="location" style="float: left">
              <span id="city">长宁</span>
-             <div  id="areaCollectionA"><img id="areaCollectionImg" src="../img/收藏.png"></div>
-             <div  id="areaLocalA" style="float: left">
-                 <img id="areaLocalImg" src="../img/符号-位置.png">
-                 <span style="color: #F9C73D">Change Location</span>
-             </div>
-         </div>
-<!--         系统时间-->
-         <div id="province">
              <p id="textP" style="color: white;font-size: 25px;padding-top: 3%;">上海</p>
              <div id="newTime">
-                  <!--获取系统时间-->
+                 <!--获取系统时间-->
                  <span id="nowTime">显示时间</span>
              </div>
          </div>
 
-         <div id="fText" style="float: left">
-             <div style="color: white;margin-top: 28%">
-                 <span style="font-size: 20px">↑</span>&nbsp&nbsp
-                 <span style="font-size: 40px;">33°</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                 <span style="font-size: 20px">↓</span>&nbsp&nbsp
-                 <span style="font-size: 40px;">28°</span>&nbsp&nbsp
+         <div id="clickDiv" style="float: left;">
+             <div  id="areaCollectionA"><img id="areaCollectionImg" src="../img/收藏.png"></div>
+             <div  id="areaLocalA">
+                 <div id="areaLocalDetail">
+                     <img id="areaLocalImg" src="../img/符号-位置.png">
+                     <span style="color: #F9C73D">Change Location</span>
+                 </div>
+                 <div id="selectForm">
+                     <div>
+                         <span id="selectSpanText">Detect my location</span>
+                         <img id="selectFormImg" src="../img/定位-定位.png">
+                     </div>
+                     <select class="select2">
+                         <option value="徐汇">徐汇</option>
+                         <option value="宝山">宝山</option>
+                         <option value="闵行">闵行</option>
+                         <option value="川沙">川沙</option>
+                         <option value="嘉定">嘉定</option>
+                         <option value="南汇">南汇</option>
+                     </select>
+                     <div id="selectFoot">
+                         管理位置
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="clear"></div>
+
+         <div id="fText" style="">
+             <div style="color: white;">
+                 <span style="font-size: 20px">↑</span>
+                 <span style="font-size: 40px;">33°</span>
+                 <span style="font-size: 20px">↓</span>
+                 <span style="font-size: 40px;">28°</span>
              </div>
              <p id="temperature">29°</p>
-             <p>F</p>
-             <p>C</p>
-             <div id="fc">
-
+             <div id="fc" style="float: left;margin-top: 50px;">
+                 <p style="color: white;font-size: 40px">F</p>
+                 <p style="color: #878c93;font-size: 40px">C</p>
              </div>
          </div>
-         <div id="selectForm">
-            <div style="float: left">
-                <p id="selectSpanText">Detect my location</p>
-               <img id="selectFormImg" src="../img/定位-定位.png">
-            </div>
-            <select class="select2">
-                 <option value="徐汇">徐汇</option>
-                 <option value="宝山">宝山</option>
-                 <option value="闵行">闵行</option>
-                 <option value="川沙">川沙</option>
-                 <option value="嘉定">嘉定</option>
-                 <option value="南汇">南汇</option>
-             </select>
-             <div id="selectFoot">
-                 <span id="selectFootP">管理位置</span>
-             </div>
-         </div>
+         <div class="clear"></div>
      </div>
-
  </div>
 <!--中间部位结束-->
 <script src="../js/index.js"></script>

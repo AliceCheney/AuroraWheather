@@ -11,7 +11,6 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /*float: left;*/
 }
 
 header{
@@ -24,49 +23,28 @@ header{
     top: 0;
 }
 #selectForm{
-    width: 400px;
-    height: 200px;
     background-color: white;
     border-radius: 3px;
     box-shadow: 2px 1px 8px #888888;
-    margin-left: 55%;
-    margin-top: -55px;
-    display: none;
-    /*float: left;*/
-
+    visibility: hidden;
+    /*float: top;*/
+    padding: 20px 20px 20px 20px;
 }
 #selectSpanText{
-    width: 350px;
-    margin-left: 25px;
     color: #1296DB;
-    margin-top: -147%;
     font-size: 20px;
-    cursor: pointer;
 }
 #selectFormImg{
     width: 25px;
     height: 25px;
-    margin-top: -73px;
-    margin-left: 350px;
     cursor: pointer
 }
 .select2{
-    width: 350px;
-    margin-left: 6.5%;
-    margin-top: 70px;
+    width: 200px;
 }
 #selectFoot{
-    width: 400px;
-    height: 70px;
     background-color: rgba(212, 212, 212, 0.1);
     margin-top: 20px;
-    /*padding-left: 60%;*/
-}
-#selectFootP{
-    padding-left: -100px;
-    padding-top: 20px;
-    cursor: pointer;
-    text-align: left;
 }
 
 .blackMask{
@@ -114,9 +92,12 @@ header{
 }
 
 #areaLocalA{
+    float: left;
+}
+#areaLocalDetail{
+    width: 155px;
     margin-top: 10px;
     margin-left: 10px;
-    float: left;
     padding: 5px 5px 5px 0;
     background-color: rgba(2,2,2,0.4);
     cursor: pointer;
@@ -144,10 +125,12 @@ header{
 }
 #temperature{
     color: white;
-    font-size: 220px;
-    margin-top: -50px;
-    margin-left: -6%;
+    font-size: 150px;
+    float: left;
 }
 #fc{
-    margin-left: 200px;
+    /*margin-left: 200px;*/
+}
+.clear{
+    clear:both
 }

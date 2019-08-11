@@ -11,15 +11,11 @@ $(document).ready(function () {
 });
 let cd = 30;
 let isCd = true;
-let clickSelectForm = false;
 
-$('#areaLocalA').click(function () {
-    if (clickSelectForm) {
-        $('#selectForm').hide()
-        clickSelectForm = false;
-    }else {
-        $('#selectForm').show()
-        clickSelectForm = true;
+$('#areaLocalDetail').click(function () {
+    if ($('#selectForm').css('visibility') === 'visible'){
+        $('#selectForm').css('visibility','hidden')
+    } else {
+        $('#selectForm').css('visibility','visible')
     }
 });
-
