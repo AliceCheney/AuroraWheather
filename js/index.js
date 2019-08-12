@@ -19,3 +19,16 @@ $('#areaLocalDetail').click(function () {
         $('#selectForm').css('visibility','visible')
     }
 });
+let isCf = false;
+$('#clickC').click(function () {
+    if (isCf){
+        $('#clickF').text('F')
+        $('#clickC').text('C')
+        isCf = false;
+    }else {
+        $('#clickF').text('C')
+        $('#clickC').text('F')
+        // f=c×9/5+32
+        isCf = true;
+    }
+});
