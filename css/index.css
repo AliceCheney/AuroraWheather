@@ -5,7 +5,7 @@
     #leftBlock{display: none}
 }
 body{
-    background-image: url("../img/ground.jpg");
+    background-image: url("../img/sunny.jpg");
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,9 +130,30 @@ header{
     font-size: 150px;
     float: left;
 }
-#fc{
-    /*margin-left: 200px;*/
+#weatherBar{
+    float: left;
+    background-color: rgba(2,2,2,0.45);
+    width: 100%;
 }
+.ulP{
+    color: white;
+    text-align: center;
+}
+
+.liStyle{
+    list-style: none;
+    margin: 5px;
+    white-space: nowrap;
+    width: 70px;
+    display: inline-block;
+}
+.ulStyle{
+    display: block;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
 .clear{
     clear:both
 }
