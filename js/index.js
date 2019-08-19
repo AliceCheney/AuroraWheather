@@ -37,4 +37,15 @@ $(document).ready(function () {
             isC = true;
         }
     });
+
+    $.ajax({
+        url:"https://www.tianqiapi.com/api/?version=v1&cityid=101120609",
+        type:"get",
+        success:function (result) {
+            console.log(result)
+        },
+        error:function (error) {
+            console.log(error.statusText)
+        }
+    })
 });
