@@ -73,18 +73,20 @@ header{
     margin-left: 1%;
     float: left;
 }
-#leftBlock{
-    width: 13.5%;
-    height: 1000px;
-    background-color: rgba(2,2,2,0.4);
-    margin-left: 1%;
-    margin-top: 120px;
-    float: left;
-}
+/*#leftBlock{*/
+/*    width: 13.5%;*/
+/*    height: 1000px;*/
+/*    background-color: rgba(2,2,2,0.4);*/
+/*    margin-left: 1%;*/
+/*    margin-top: 120px;*/
+/*    float: left;*/
+/*}*/
 
 #con{
-    margin-top: 140px;
-    float: left;
+    position: absolute;
+    top: 140px;
+    /*float: left;*/
+    /*width: 100%;*/
     margin-left: 3%;
 }
 #city{
@@ -168,6 +170,7 @@ header{
     background-color: rgba(0,0,0,0.45);
     width: 550px;
     color: white;
+    /*position: relative;*/
     float: left;
     padding: 0 20px 0 20px;
     margin-left: 100px;
