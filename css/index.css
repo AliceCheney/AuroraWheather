@@ -175,6 +175,54 @@ header{
     padding: 0 20px 0 20px;
     margin-left: 100px;
 }
+#clickWeatherDayDetails1{
+    cursor: pointer;
+    /*visibility: hidden;*/
+}
+.weatherStyle{
+    /*visibility: hidden;*/
+    display: none;
+    word-wrap: break-word;
+    word-break: normal;
+    width: 540px
+}
+#weatherStyle2{
+    display: none;
+    word-wrap: break-word;
+    word-break: normal;
+    width: 540px
+}
+#weatherStyle3{
+    display: none;
+    word-wrap: break-word;
+    word-break: normal;
+    width: 540px
+}
+#weatherStyle4{
+    display: none;
+    word-wrap: break-word;
+    word-break: normal;
+    width: 540px
+}
+#weatherStyle5{
+    display: none;
+    word-wrap: break-word;
+    word-break: normal;
+    width: 540px
+}
+#weatherStyle6{
+    display: none;
+    word-wrap: break-word;
+    word-break: normal;
+    width: 540px
+}
+#weatherStyle7{
+    display: none;
+    word-wrap: break-word;
+    word-break: normal;
+    width: 540px
+}
+
 .clear{
     clear:both
 }
