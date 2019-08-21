@@ -43,72 +43,33 @@ $(document).ready(function () {
         type:"get",
         success:function (success) {
             console.log(success.data);
-            $('#week1').text(success.data[0].week);
-            $('#weatherText1').text(success.data[0].air_tips);
-            $('#maxTemperature1').text(success.data[0].tem1);
-            $('#minTemperature1').text(success.data[0].tem2);
-        //    2
-            $('#week2').text(success.data[1].week);
-            $('#weatherText2').text(success.data[1].index[1].desc);
-            $('#maxTemperature2').text(success.data[1].tem1);
-            $('#minTemperature2').text(success.data[1].tem2);
-        //    3
-            $('#week3').text(success.data[2].week);
-            $('#weatherText3').text(success.data[2].index[1].desc);
-            $('#maxTemperature3').text(success.data[2].tem1);
-            $('#minTemperature3').text(success.data[2].tem2);
-        //    4
-            $('#week4').text(success.data[3].week);
-            $('#weatherText4').text(success.data[3].index[1].desc);
-            $('#maxTemperature4').text(success.data[3].tem1);
-            $('#minTemperature4').text(success.data[3].tem2);
+
+            for ( let i in  success.data){
+                $('#weatherDay').append(
+                    '               <span onclick="clickWeatherDayDetails(this)" style="cursor: pointer;">' +
+                    '                 <span>'+ success.data[i].week +'</span>' +
+                    '                 <span class="weatherDaySpan">' +
+                    '                     <img class="weatherBarImg" src="../img/rain.png" alt="">' +
+                    '                 </span>' +
+                    '                 <span class="weatherDaySpan">' +
+                    '                     <img style="width: 40px;height: 40px" src="../img/rain_ico_10@2x.png" alt="">' +
+                    '                      <span >10%</span>' +
+                    '                 </span>' +
+                    '                 <span class="weatherDaySpan" style="font-size: 28px">'+ success.data[i].tem1+'</span>' +
+                    '                 <span style="font-size: 28px;color: #5bc0de">'+ success.data[i].tem2+'</span>' +
+                    '                     <div class="weatherStyle" >' +
+                    '                         <span id="weatherText">'+ success.data[i].air_tips +'</span>' +
+                    '                     </div>' +
+                    '                 <hr style="border: 0.2px dashed #ccc;  height: 1px;" />' +
+                    '                </span>')
+            }
         },
         error:function (error) {
             console.log(error.statusText)
         }
     })
 });
-    let weather1 = false;
-    let weather2 = false;
-    let weather3 = false;
-    let weather4 = false;
-    let weather5 = false;
-    let weather6 = false;
-    let weather7 = false;
-    $('#clickWeatherDayDetails1').click(function () {
-        if (weather1){
-            $('.weatherStyle').css('display','none');
-            weather1 = false;
-        }else {
-            $('.weatherStyle').css('display','block');
-            weather1 = true;
-        }
-    });
-
-    $('#clickWeatherDayDetails2').click(function () {
-        if (weather2){
-            $('#weatherStyle2').css('display','none');
-            weather2 = false;
-        }else {
-            $('#weatherStyle2').css('display','block');
-            weather2 = true;
-        }
-    });
-    $('#clickWeatherDayDetails3').click(function () {
-        if (weather3){
-            $('#weatherStyle3').css('display','none');
-            weather3 = false;
-        }else {
-            $('#weatherStyle3').css('display','block');
-            weather3 = true;
-        }
-    });
-$('#clickWeatherDayDetails4').click(function () {
-    if (weather4){
-        $('#weatherStyle4').css('display','none');
-        weather4 = false;
-    }else {
-        $('#weatherStyle4').css('display','block');
-        weather4 = true;
-    }
-});
+function clickWeatherDayDetails(e) {
+    $('.weatherStyle').slideUp("first")
+    $(e).children('.weatherStyle').slideDown("first");
+}

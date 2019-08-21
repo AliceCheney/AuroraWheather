@@ -73,20 +73,10 @@ header{
     margin-left: 1%;
     float: left;
 }
-/*#leftBlock{*/
-/*    width: 13.5%;*/
-/*    height: 1000px;*/
-/*    background-color: rgba(2,2,2,0.4);*/
-/*    margin-left: 1%;*/
-/*    margin-top: 120px;*/
-/*    float: left;*/
-/*}*/
-
 #con{
     position: absolute;
     top: 140px;
-    /*float: left;*/
-    /*width: 100%;*/
+    width: 97%;
     margin-left: 3%;
 }
 #city{
@@ -135,7 +125,8 @@ header{
 #weatherBar{
     float: left;
     background-color: rgba(2,2,2,0.45);
-    /*width: 550px;*/
+    width: 30%;
+    /*position: absolute;*/
 }
 .ulP{
     color: white;
@@ -168,16 +159,13 @@ header{
 }
 #weatherDetails{
     background-color: rgba(0,0,0,0.45);
-    width: 550px;
+    width: 30%;
     color: white;
     /*position: relative;*/
+    /*left: 30%;*/
     float: left;
     padding: 0 20px 0 20px;
-    margin-left: 100px;
-}
-#clickWeatherDayDetails1{
-    cursor: pointer;
-    /*visibility: hidden;*/
+    margin-left: 3%;
 }
 .weatherStyle{
     /*visibility: hidden;*/
@@ -186,43 +174,6 @@ header{
     word-break: normal;
     width: 540px
 }
-#weatherStyle2{
-    display: none;
-    word-wrap: break-word;
-    word-break: normal;
-    width: 540px
-}
-#weatherStyle3{
-    display: none;
-    word-wrap: break-word;
-    word-break: normal;
-    width: 540px
-}
-#weatherStyle4{
-    display: none;
-    word-wrap: break-word;
-    word-break: normal;
-    width: 540px
-}
-#weatherStyle5{
-    display: none;
-    word-wrap: break-word;
-    word-break: normal;
-    width: 540px
-}
-#weatherStyle6{
-    display: none;
-    word-wrap: break-word;
-    word-break: normal;
-    width: 540px
-}
-#weatherStyle7{
-    display: none;
-    word-wrap: break-word;
-    word-break: normal;
-    width: 540px
-}
-
 .clear{
     clear:both
 }
