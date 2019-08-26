@@ -5,7 +5,7 @@
     #leftBlock{display: none}
 }
 body{
-    background-image: url("../img/sunny.jpg");
+    background-image: url("../img/blue-sky-clouds-light-57019.jpg");
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,6 +50,7 @@ header{
 }
 
 .blackMask{
+    border-radius: 2px;
     background-color: rgba(2,2,2,0.4);
 }
 #topDiv{
@@ -93,6 +94,7 @@ header{
     margin-top: 10px;
     margin-left: 10px;
     padding: 5px 5px 5px 0;
+    border-radius: 2px;
     background-color: rgba(2,2,2,0.4);
     cursor: pointer;
 }
@@ -100,6 +102,7 @@ header{
     margin-top: 10px;
     margin-left: 60px;
     float: left;
+    border-radius: 2px;
     background-color: rgba(2,2,2,0.4);
     padding: 5px 5px 5px 5px;
     cursor: pointer;
@@ -124,6 +127,7 @@ header{
 }
 #weatherBar{
     float: left;
+    border-radius: 3px;
     background-color: rgba(2,2,2,0.45);
     width: 30%;
     /*position: absolute;*/
@@ -158,8 +162,9 @@ header{
     padding: 0 0 0 60px;
 }
 #weatherDetails{
+    border-radius: 3px;
     background-color: rgba(0,0,0,0.45);
-    width: 30%;
+    width: 28%;
     color: white;
     /*position: relative;*/
     /*left: 30%;*/

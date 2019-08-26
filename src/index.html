@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AuroraWeather</title>
+    <title>Aurora天气</title>
     <script src="../js/jQuery.js"></script>
     <script src="../js/select2.full.min.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/select2.min.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
@@ -65,9 +66,9 @@
          <div id="fText" style="">
              <div style="color: white;">
                  <span style="font-size: 20px;">↑</span>
-                 <span style="font-size: 40px;">33°</span>
+                 <span id="topMaxWeather" style="font-size: 35px;">30</span>
                  <span style="font-size: 20px">↓</span>
-                 <span style="font-size: 40px;">28°</span>
+                 <span id="topMinWeather" style="font-size: 35px;">28</span>
              </div>
              <p id="temperature"></p>
              <div id="fc" style="float: left;margin-top: 50px;">
@@ -168,14 +169,32 @@
                  <h3>详情</h3>
                  <hr style="color: white">
              </div>
-             <div>
-                 <img src="../img/partly_cloudy_day@2x.png" style="width: 20%;">
-                 <span style="font-size: 20px">
-                     <span style="padding-left: 10%">体感温度</span>
-                     <span style=" padding-left: 30% ">37°C</span>
-                 </span>
-                 <hr style="border: 0.2px dashed #ccc;  height: 1px;" />
+             <div style="float: left;padding: 20px 20px 20px 20px">
+                 <img src="../img/partly_cloudy_day@2x.png" style="width: 100%;">
+<!--                 <hr style="border: 0.2px dashed #ccc;  height: 1px;" />-->
              </div>
+             <span id="DetailsUl" style="font-size: 20px">
+                 <ul style="list-style: none;float: left">
+                     <li style="float: left;padding: 10px 0 0 0">体感温度</li>
+                     <li style="float: right;padding: 10px 0 0 0">37℃</li>
+                     <li>................................................</li>
+                     <li style="float: left;padding: 10px 0 0 0">体感温度</li>
+                     <li style="float: right;padding: 10px 0 0 0">37℃</li>
+                     <li>................................................</li>
+                     <li style="float: left;padding: 10px 0 0 0">体感温度</li>
+                     <li style="float: right;padding: 10px 0 0 0">37℃</li>
+                     <li>................................................</li>
+                     <li style="float: left;padding: 10px 0 0 0">体感温度</li>
+                     <li style="float: right;padding: 10px 0 0 0">37℃</li>
+                     <li>................................................</li>
+                 </ul>
+
+<!--                 <span style="font-size: 20px;float: left;width: 50%">-->
+<!--                     <span style="padding-left: 10%">体感温度</span>-->
+<!--                     <span style=" padding-left: 30% ">37°C</span>-->
+<!--                     <span style="padding-left: 9%">.......................................</span>-->
+<!--                 </span>-->
+             </span>
          </div>
          <div class="clear"></div>
      </div>
