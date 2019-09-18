@@ -5,8 +5,10 @@
     <title>Aurora天气</title>
     <script src="../js/jQuery.js"></script>
     <script src="../js/select2.full.min.js"></script>
+    <script src="../js/iziToast.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/select2.min.css">
+    <link rel="stylesheet" href="../css/iziToast.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,38 +25,39 @@
 <!-- 头部结束-->
 <!-- 中间部位-->
  <div>
-<!--     <div id="leftBlock">-->
-<!--         zheshiliebiao-->
-<!--     </div>-->
      <div id="con">
          <!--地域时间-->
          <div id="location" style="float: left">
-             <span id="city">长宁</span>
-             <p id="textP" style="color: white;font-size: 25px;padding-top: 3%;">上海</p>
+             <span id="city">上海</span>
+             <p id="textP" style="color: white;font-size: 25px;padding-top: 3%;">中国</p>
              <div id="newTime">
                  <!--获取系统时间-->
                  <span id="nowTime">显示时间</span>
              </div>
          </div>
          <div id="clickDiv" style="float: left;">
-             <div  id="areaCollectionA"><img id="areaCollectionImg" src="../img/收藏.png"></div>
+             <div  id="areaCollectionA">
+                 <img id="areaCollectionImg" src="../img/收藏.png"></div>
              <div  id="areaLocalA">
+            <!--收藏图片-->
+            <!--点击位置框-->
                  <div id="areaLocalDetail">
                      <img id="areaLocalImg" src="../img/符号-位置.png">
                      <span style="color: #F9C73D">Change Location</span>
                  </div>
-                 <div id="selectForm">
+            <!--点击框要显示的-->
+                 <div id="selectForm" >
                      <div>
                          <span id="selectSpanText">Detect my location</span>
                          <img id="selectFormImg" src="../img/定位-定位.png">
                      </div>
-                     <select class="select2">
-                         <option value="徐汇">徐汇</option>
-                         <option value="宝山">宝山</option>
-                         <option value="闵行">闵行</option>
-                         <option value="川沙">川沙</option>
-                         <option value="嘉定">嘉定</option>
-                         <option value="南汇">南汇</option>
+                     <select class="select2" >
+                         <option value="101010100">北京</option>
+                         <option value="101020100" selected>上海</option>
+                         <option value="101030100">天津</option>
+                         <option value="101120201">青岛</option>
+                         <option value="101190101">南京</option>
+                         <option value="101170101">银川</option>
                      </select>
                      <div id="selectFoot">
                          管理位置
@@ -94,66 +97,7 @@
                   <p style="color: white">__________</p>
              </div>
              <div style="width: 100%" >
-                 <ul class="ulStyle" >
-                     <li class="liStyle"  >
-                         <p class="ulP">17:14</p>
-                         <p>
-                             <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                         <p class="ulP">33°</p>
-                         </p>
-                     </li>
-                     <li class="liStyle" style="margin: 0">
-                         <p class="ulP">17:14</p>
-                         <p>
-                             <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                         <p class="ulP">33°</p>
-                         </p>
-                     </li><li class="liStyle" style="margin: 0">
-                     <p class="ulP">17:14</p>
-                     <p>
-                         <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                     <p class="ulP">33°</p>
-                     </p>
-                 </li><li class="liStyle" style="margin: 0">
-                     <p class="ulP">17:14</p>
-                     <p>
-                         <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                     <p class="ulP">33°</p>
-                     </p>
-                 </li><li class="liStyle" style="margin: 0">
-                     <p class="ulP">17:14</p>
-                     <p>
-                         <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                     <p class="ulP">33°</p>
-                     </p>
-                 </li>
-                     <li class="liStyle" style="margin: 0">
-                         <p class="ulP">17:14</p>
-                         <p>
-                             <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                         <p class="ulP">33°</p>
-                         </p>
-                     </li><li class="liStyle" style="margin: 0">
-                     <p class="ulP">17:14</p>
-                     <p>
-                         <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                     <p class="ulP">33°</p>
-                     </p>
-                 </li>
-                     <li class="liStyle" style="margin: 0">
-                         <p class="ulP">17:14</p>
-                         <p>
-                             <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                         <p class="ulP">33°</p>
-                         </p>
-                     </li><li class="liStyle" style="margin: 0">
-                     <p class="ulP">17:14</p>
-                     <p>
-                         <img src="../img/partly_cloudy_day@2x.png" style="width: 45px;height: 45px">
-                     <p class="ulP">33°</p>
-                     </p>
-                 </li>
-                 </ul>
+                 <ul class="ulStyle" ></ul>
              </div>
              <div id="weatherDay" >
             <!--1.开始栏-->
