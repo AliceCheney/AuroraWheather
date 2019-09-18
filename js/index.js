@@ -93,7 +93,7 @@ $(document).ready(function () {
                     '<li>................................................</li>'
                 )
             }
-            console.log(success.data[0].hours)
+            // console.log(success.data[0].hours)
             $('.ulStyle').html('');
             for (let b in success.data[0].hours){
                 $('.ulStyle').append(
@@ -117,8 +117,8 @@ $(document).ready(function () {
         let options=$(".select2");  //获取选中的项
         let value = options.val();   //拿到选中项的值
         $('#city').text($('.select2 option:selected').text());//选中的文本
-        console.log(value);
-        console.log($('.select2 option:selected').text());
+        // console.log(value);
+        // console.log($('.select2 option:selected').text());
 
         $.ajax({
             url:"https://www.tianqiapi.com/api/?version=v1&cityid="+ value +"&appid=[14567854]&appsecret=[e1h73Axv]",
@@ -183,7 +183,7 @@ $(document).ready(function () {
                         '<li>................................................</li>'
                     )
                 }
-                console.log(success.data[0].hours)
+                // console.log(success.data[0].hours)
                 $('.ulStyle').html('');
                 for (let b in success.data[0].hours){
                     $('.ulStyle').append(
